@@ -1,0 +1,30 @@
+pkgbase = linux-mst
+	pkgdesc = The linux lts kernel with patches for mst support
+	pkgver = 3.16.2
+	pkgrel = 4
+	url = http://www.kernel.org/
+	arch = i686
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = docbook-xsl
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	source = https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.16.tar.xz
+	source = https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.16.2.xz
+	source = config
+	source = config.x86_64
+	source = linux.preset
+	source = change-default-console-loglevel.patch
+	source = compal-laptop-hwmon-fix.patch
+	source = drm-i915-mst-v3.16.patch
+	source = https://github.com/graysky2/kernel_gcc_patch/archive/master.zip
+	options = !strip
+
+pkgname = linux-mst
+
+pkgname = linux-mst-headers
+
+pkgname = linux-mst-docs
+
